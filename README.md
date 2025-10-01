@@ -9,3 +9,62 @@ There is no specific context, it's just my major related topic and i want to go 
 
 ## System Architecture
 ![System Architecture Overview](docs/assets/System-design.jpg)
+
+### Component Responsibilities
+#### Device Registry Service
+- Device provisioning & lifecycle
+- Certificate management
+- Device metadata & status
+- Authorization policies
+
+#### Telemetry Ingestor
+- Real-time data ingestion
+- Deduplication & validation
+- Time-series storage
+- Aggregation pipelines
+
+#### Command Controller
+- Device command dispatch
+- Idempontency handling
+- Command acknowledgment
+- Retry & fallback logic
+
+## Project Structure
+```
+IoT-Based-Smart-Home-Security-System-with-Cloud-Integration/
+├── backend/
+│   ├── src/main/java/com/iot/smarthome/
+│   │   ├── controller/
+│   │   │   ├── 
+│   │   │   └── 
+│   │   ├── service/
+│   │   │   ├── 
+│   │   │   ├── 
+│   │   │   └── 
+│   │   ├── repository/
+│   │   │   ├── 
+│   │   │   └── 
+│   │   ├── model/
+│   │   │   ├── 
+│   │   │   ├── 
+│   │   │   └── 
+│   │   ├── dto/
+│   │   │   ├── 
+│   │   │   ├── 
+│   │   │   └── 
+│   │   ├── config/
+│   │   │   ├── 
+│   │   │   ├── 
+│   │   │   └── 
+│   │   └── exception/
+│   │       ├── 
+│   │       └── 
+│   ├── src/main/proto/
+│   │   └── device_service.proto
+│   └── pom.xml
+├── telemetry-ingestor-service/
+├── command-controller-service/
+├── alert-service/
+├── ota-service/
+└── user-management-service/
+```
